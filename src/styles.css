@@ -1,0 +1,257 @@
+
+#hero-section{
+    min-height: 100vh;
+    background-image: url('/public/images/model3.jpg');
+    background-size: cover;
+}
+
+.hero-overlay{
+    background-color: rgba(0, 0, 0, 0.315);
+    min-height: 100vh;
+}
+
+/* #Navigation Bar  */
+#main-nav{
+    height: 3em;
+    padding: 1em 5rem 1em 5rem; 
+    border-bottom: 1px solid #f8f8f809;
+    position: relative;
+    z-index: 15;
+
+}
+
+#main-nav, .nav-links-div, .nav-icons-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-div, .logo-div img{
+    height: 100% !important;
+}
+
+.nav-links-div{
+    color:#ffffff;
+    font-weight: 400;
+}
+
+.nav-links-dark{
+    color:#000000;
+}
+
+.nav-link, .nav-icon{
+    padding: .5rem;
+    cursor: pointer;
+}
+
+.nav-link{
+    font-size: .75rem;
+    transition: all 400ms ease-in-out;
+}
+
+.nav-link:hover{
+    scale: 1.25;
+}
+
+.nav-icon img{
+    width: 1.25rem;
+}
+
+.nav-links-contents{
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+    top: -90vh;
+    transition: all 500ms ease-in-out;
+}
+
+.nav-links-contents-overlay{
+    background-color: #ffffff3a;
+    min-height: 100vh;
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+    top: -100vh;
+    transition: all 500ms ease-in-out;
+}
+
+.nav-links-hovering{
+    top: 0vh;
+}
+
+.nav-links-content-div{
+    background-color: #ffffff;
+    color: #000000;
+    padding-top: 6em;
+    width: 100%;
+}
+
+
+/* #VEHICLES */
+.vehicles-div{
+    display: flex;
+    justify-content: space-around;
+    padding: 2em 10em 2em 10em;
+    opacity: 0;
+    transition: all 1500ms ease-in-out;
+}
+
+.vehicles-div-hover{
+    opacity: 1;
+}
+
+.vehicles-grid{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 3em;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.vehicle-model{
+    text-align: center;
+}
+
+.vehicle-model img{
+    width: 12rem;
+}
+
+.vehicle-model h3{
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.vehicle-model p span{
+    padding: .85rem;
+    text-decoration: underline;
+    color: #5f5f5f;
+    cursor: pointer;
+}
+
+.vehicles-links-list{
+    padding-left: 5em;
+    border-left: 1px solid #4e4e4e2d;
+    list-style: none;
+}
+
+.vehicles-links-list li{
+    margin-bottom: .85rem;
+    font-weight: 450;
+    cursor: pointer;
+}
+
+.vehicles-links-list li:hover{
+    text-decoration: underline;
+}
+
+.discover-grid{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 5rem;
+    margin-bottom: 2em;
+}
+
+.discover-links-list li{
+    margin-bottom: .75rem;
+    font-weight: 450;
+    cursor: pointer;
+    list-style: none;
+    color: #5f5f5f;
+}
+
+.discover-links-list li:hover{
+    text-decoration: underline;
+}
+
+.discover-title{
+    color: #6e6e6e;
+    font-weight: 200;
+    margin-bottom: 1rem;
+}
+
+.shop-grid{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    gap: 4rem;
+    margin-bottom: 2em;
+    justify-content: center;
+    align-items: end;
+}
+
+.shop-item{
+    text-align: center;
+}
+
+.shop-item img{
+    width: 11rem;
+    margin-bottom: .5rem;
+}
+
+.shop-item h3{
+    font-weight: 400;
+    cursor: pointer;
+}
+
+
+/* #Content  */
+
+.hero-content{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.model-info-div{
+    padding: 0 5rem 0 5rem;
+}
+
+.model{
+    font-size: 3rem;
+}
+
+.lease-info{
+    font-weight: lighter;
+}
+
+.model-data, .stats-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.model-data{
+    margin-bottom: 2rem;
+    padding: 0 5rem 0 5rem;
+}
+
+.stats-div div{
+    padding: 1rem;
+}
+
+.stats-div div h4, .order-div h4{
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+}
+
+.order-div h4{
+    font-size: 1.75rem;
+}
+
+.order-btn{
+    font-size: .75rem;
+    font-weight: bold;
+    padding: .75rem;
+    border: 1px solid #ffffff;
+    border-radius: .75em;
+    width: 6rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.order-btn:hover{
+    color: #000000;
+    background-color: #ffffff;
+}
